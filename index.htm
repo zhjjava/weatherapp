@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="weatherAppTest">
+    <head>
+        <title>AngularJS Weather Forecast</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />        
+        <link href="static/css/navbar-fixed-top.css" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+        <script src="static/js/app.js"></script>
+        <script src="static/js/routes.js"></script>
+        <script src="static/js/controllers.js"></script>
+        <script src="static/js/directives.js"></script>		
+        <script src="static/js/services.js"></script>
+
+    </head>
+    <body>
+
+        <header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">AngularJS Weather Forecast</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+
+        <div class="container">
+            <div ng-view></div>
+		</div>
+
+    </body>
+</html>

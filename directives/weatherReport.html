@@ -1,0 +1,8 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{weatherDay.dt_txt}}</h3>
+    </div>
+    <div class="panel-body">
+        Temperature: {{ convertToStandard({ daytimeTemp: weatherDay.main.temp }) }}; Weather: {{weatherDay.weather[0].main}}
+    </div>
+</div>
